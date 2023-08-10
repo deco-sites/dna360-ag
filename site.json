@@ -1,5 +1,8 @@
 {
-  "siteId": 747,
-  "namespace": "deco-sites/links",
-  "imports": ["$live/live.gen.ts", "deco-sites/std/live.gen.ts"]
+  "siteId": 2086,
+  "namespace": "deco-sites/dna360-ag",
+  "imports": [
+    "$live/live.gen.ts",
+    "deco-sites/std/live.gen.ts"
+  ]
 }
