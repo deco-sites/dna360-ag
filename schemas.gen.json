@@ -79,6 +79,8 @@
               "$live/sections/PageInclude.tsx",
               "$live/sections/Slot.tsx",
               "$live/sections/UseSlot.tsx",
+              "deco-sites/dna360-ag/sections/Header.tsx",
+              "deco-sites/dna360-ag/sections/LatestPosts.tsx",
               "deco-sites/dna360-ag/sections/Links.tsx",
               "deco-sites/std/sections/Analytics.tsx",
               "deco-sites/std/sections/configButterCMS.global.tsx",
@@ -7700,6 +7702,83 @@
       "format": "image-uri",
       "title": "Image"
     },
+    "ZGVjby1zaXRlcy9kbmEzNjAtYWcvc2VjdGlvbnMvSGVhZGVyLnRzeA==@Link": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "description": "20px transparent png recommended",
+          "title": "Label"
+        },
+        "href": {
+          "type": "string",
+          "title": "Href"
+        }
+      },
+      "required": [
+        "label",
+        "href"
+      ],
+      "title": "Link"
+    },
+    "ZGVjby1zaXRlcy9kbmEzNjAtYWcvc2VjdGlvbnMvSGVhZGVyLnRzeA==@Link[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9kbmEzNjAtYWcvc2VjdGlvbnMvSGVhZGVyLnRzeA==@Link"
+      },
+      "title": "Link[]"
+    },
+    "ZGVjby1zaXRlcy9kbmEzNjAtYWcvc2VjdGlvbnMvSGVhZGVyLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "logoImg": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Logo Img"
+        },
+        "buttons": {
+          "type": "object",
+          "properties": {
+            "items": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9kbmEzNjAtYWcvc2VjdGlvbnMvSGVhZGVyLnRzeA==@Link[]",
+              "title": "Items"
+            }
+          },
+          "required": [
+            "items"
+          ],
+          "title": "Buttons"
+        },
+        "links": {
+          "type": "object",
+          "properties": {
+            "items": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9kbmEzNjAtYWcvc2VjdGlvbnMvSGVhZGVyLnRzeA==@Link[]",
+              "title": "Items"
+            }
+          },
+          "required": [],
+          "title": "Links"
+        }
+      },
+      "required": [
+        "logoImg",
+        "buttons"
+      ],
+      "title": "deco-sites/dna360-ag/sections/Header.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9kbmEzNjAtYWcvc2VjdGlvbnMvTGF0ZXN0UG9zdHMudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        }
+      },
+      "required": [
+        "title"
+      ],
+      "title": "deco-sites/dna360-ag/sections/LatestPosts.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9kbmEzNjAtYWcvY29tcG9uZW50cy91aS9MaW5rcy50c3g=@Link": {
       "type": "object",
       "properties": {
@@ -10663,6 +10742,48 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9kbmEzNjAtYWcvc2VjdGlvbnMvSGVhZGVyLnRzeA==": {
+      "title": "deco-sites/dna360-ag/sections/Header.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kbmEzNjAtYWcvc2VjdGlvbnMvSGVhZGVyLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/dna360-ag/sections/Header.tsx"
+          ],
+          "default": "deco-sites/dna360-ag/sections/Header.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9kbmEzNjAtYWcvc2VjdGlvbnMvTGF0ZXN0UG9zdHMudHN4": {
+      "title": "deco-sites/dna360-ag/sections/LatestPosts.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kbmEzNjAtYWcvc2VjdGlvbnMvTGF0ZXN0UG9zdHMudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/dna360-ag/sections/LatestPosts.tsx"
+          ],
+          "default": "deco-sites/dna360-ag/sections/LatestPosts.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9kbmEzNjAtYWcvc2VjdGlvbnMvTGlua3MudHN4": {
       "title": "deco-sites/dna360-ag/sections/Links.tsx",
       "type": "object",
@@ -11884,6 +12005,12 @@
         },
         {
           "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvVXNlU2xvdC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kbmEzNjAtYWcvc2VjdGlvbnMvSGVhZGVyLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kbmEzNjAtYWcvc2VjdGlvbnMvTGF0ZXN0UG9zdHMudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kbmEzNjAtYWcvc2VjdGlvbnMvTGlua3MudHN4"

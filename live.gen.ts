@@ -4,7 +4,9 @@
 
 import { DecoManifest } from "$live/types.ts";
 import * as $$$$0 from "./routes/_app.tsx";
-import * as $$$$$$$$0 from "./sections/Links.tsx";
+import * as $$$$$$$$0 from "./sections/Header.tsx";
+import * as $$$$$$$$1 from "./sections/LatestPosts.tsx";
+import * as $$$$$$$$2 from "./sections/Links.tsx";
 import * as $live_workflows from "$live/routes/live/workflows/run.ts";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
@@ -153,7 +155,9 @@ const manifest = {
     "$live/sections/PageInclude.tsx": i2$$$$$2,
     "$live/sections/Slot.tsx": i2$$$$$3,
     "$live/sections/UseSlot.tsx": i2$$$$$4,
-    "deco-sites/dna360-ag/sections/Links.tsx": $$$$$$$$0,
+    "deco-sites/dna360-ag/sections/Header.tsx": $$$$$$$$0,
+    "deco-sites/dna360-ag/sections/LatestPosts.tsx": $$$$$$$$1,
+    "deco-sites/dna360-ag/sections/Links.tsx": $$$$$$$$2,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$$5,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$$6,
     "deco-sites/std/sections/configNuvemShop.tsx": i2$$$$$7,
